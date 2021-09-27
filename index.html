@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* body {
+            background-color: #2e3035;
+        } */
+
+        .container {
+            width: 100%;
+        }
+
+        .container img {
+            width: 100%;
+            height: 300px
+        }
+
+        .product {
+            display: flex;
+            margin-top: 10px;
+            width: 100%;
+            /* background-color:red; */
+            /* grid-gap: 15px;
+            grid-template-columns: auto auto auto; */
+            justify-content: space-evenly
+        }
+
+        .item {
+            width: 380px;
+            height: 180px;
+            background-color: white;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+            border-radius: 10px;
+        }
+
+        /* .dvi1{
+            background-color:rgba(53,194,169,.24);
+        } */
+        .item .upperbox {
+            width: 380px;
+            height: 100px;
+            /* background-color:rgba(53,194,169,.24); */
+            background-color: rgba(53, 194, 169, .24);
+        }
+
+        .item .div2 {
+            background: white;
+        }
+
+        .image1 {
+            width: 150px;
+            height: 180px;
+        }
+
+        .image1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .upperbox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div2 button {
+            width: 120px;
+            height: 40px;
+            background: #3bb896;
+            opacity: .9;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 800px;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .flat {
+            background: url(https://assets.pharmeasy.in/web-assets/dist/1602b4ce.svg);
+            width: 120px;
+            height: 28px;
+            color: white;
+            text-align: center;
+            /* margin-top: 6px; */
+        }
+
+        .pr {
+            padding-top: 6px;
+        }
+
+        .prout {
+            font-size: 20px;
+            color: #4f585e;
+            padding-right: 15px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin: 25px;
+        }
+        .div2 #btn2 {
+            width: 120px;
+            height: 40px;
+            background: #fc8019;
+            opacity: .9;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 800px;
+            border-radius: 5px;
+            margin: 20px;
+            /* #fdf2d2 */
+        }
+        .item .upperbox2 {
+            display: flex;
+            justify-content: space-between;
+        
+            width: 380px;
+            height: 100px;
+            /* background-color:rgba(53,194,169,.24); */
+            background-color: #fdf2d2;
+        }
+        .item .upperbox3 {
+            display: flex;
+            justify-content: space-between;
+        
+            width: 380px;
+            height: 100px;
+            /* background-color:rgba(53,194,169,.24); */
+            background-color: #d6f0ff;
+        }
+        .div2 #btn3 {
+            width: 120px;
+            height: 40px;
+            background: #00b9e1;
+            opacity: .9;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 800px;
+            border-radius: 5px;
+            margin: 20px;
+            /* #fdf2d2 */
+        }
+
+        /* SECTION 3 STYLE */
+
+.container3{
+    display: flex;
+    width: 98%;
+    height: 95px;
+    background:rgb(66, 126, 204);
+    margin:8px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+.bx1{
+    width:270px;
+    height: 95px;
+    background: yellow;
+    background-color:#a291fa;
+    border-radius: 8px;
+}
+.bx3{
+    width:270px;
+    height: 95px;
+    background-color:#a291fa;
+    border-radius: 8px;
+}
+.bx1 img{
+    width:70%;
+    height:50%;
+    padding: 23px;
+   
+}
+.bx3 img{
+    width:70%;
+    height:100%;
+    /* padding: 23px; */
+    
+   
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Nav-Bar -->
+    <div class="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+
+            </div>
+
+            <div class="searchbar">
+                <div class="inp">
+                    <input type="text" class="">
+                    <div class="icon">
+                        <img
+                            src='https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png'>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="menu">
+                <span>Login</span>
+                <span>SignUp</span>
+            </div>
+        </div>
+    </div>
+
+    <div id='abc' class="container">
+        <!-- <img id='sld'> -->
+    </div>
+
+    <!-- SECTION 2 START-->
+    <div id='products' class="product">
+        <div class="item">
+            <div class="upperbox">
+                <div class="div1">
+                    <div class="flat">
+                        <div class="pr">
+                            Flat 15% off
+                        </div>
+
+                    </div>
+                    <div class="prout"> Order Medicines</div>
+
+                </div>
+                <div class="image1">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/7c645a8d.png?dim=186x0&dpr=1.5&q=100">
+                </div>
+            </div>
+            <div class="div2">
+                <button>Order Now</button>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="upperbox2">
+                <div class="div1">
+                    <div class="flat">
+                        <div class="pr">
+                           Upto 60% off
+                        </div>
+
+                    </div>
+                    <div class="prout">Health Product</div>
+
+                </div>
+                <div class="image1">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/c7c7095b.png?dim=186x0&dpr=1.5&q=100">
+                </div>
+            </div>
+            <div  class="div2">
+                <button id='btn2'> Order Now</button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="upperbox3">
+                <div class="div1">
+                    <div class="flat">
+                        <div class="pr">
+                           Upto 70% off
+                        </div>
+
+                    </div>
+                    <div class="prout">Health Product</div>
+
+                </div>
+                <div class="image1">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/e1d3ac1c.png?dim=186x0&dpr=1.5&q=100">
+                </div>
+            </div>
+            <div  class="div2">
+                <button id='btn3'> Order Now</button>
+            </div>
+        </div>
+    </div>
+ <!-- SECTION 2 END-->
+ <!-- SECTION 3 START -->
+<div class="container3">
+    <div class="bx1"> 
+        <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png">
+    </div>
+    <div class="bx2">diffrebt</div>
+    <div class="bx3">
+        <div class="bx1"> 
+            <img src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png">
+        </div>
+    </div>
+
+
+
+</div>
+
+
+    </div>
+    <script>
+        counter = 0;
+        var arr = ["https://cms-contents.pharmeasy.in/banner/9f697ee51fe-CowinVaccinationApp.jpg",
+            "https://cms-contents.pharmeasy.in/banner/1ca3781a444-ease_diab_app.jpg?dim=1440x0&dpr=1&q=100",
+            "https://cms-contents.pharmeasy.in/banner/2d77e5150de-PL_Multi.jpg?dim=1440x0&dpr=1&q=100",
+            "https://cms-contents.pharmeasy.in/banner/e82572c12ee-Horlicks_Homepage.jpg?dim=1440x0&dpr=1&q=100"
+
+        ]
+        var container = document.getElementById('abc')
+        console.log(container)
+        function slideshow() {
+            // var container = document.getElementsByClassName('container')
+
+
+            setInterval(function () {
+                container.innerHTML = null
+                var img = document.createElement('img')
+                img.src = arr[counter];
+                counter++;
+                container.append(img)
+                if (counter == 4)
+                    counter = 0;
+
+            }, 5000);
+
+        }
+        // slideshow();
+    </script>
+</body>
+
+</html>
