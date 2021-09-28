@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="carousal_first.css">
     <link rel="stylesheet" href="carousal_second.css">
     <link rel="stylesheet" href="carousal_three.css">
+    <link rel="stylesheet" href="carousal_fourth.css">
     <style>
         /* body {
             background-color: #2e3035;
@@ -440,6 +441,93 @@
     </div>
 
     <!-- Third Carousel ends --> 
+    <!-- fourth carousel start -->
+    <div class="carousal_4">
+        <main class='main4'>
+            <div class="div4_offer">
+                <div class="div4_offer1"> 
+                    <h2>Frequently Booked Lab Tests</h2>
+                </div>
+                <div class="div4_offer2">
+                    
+                    <span id='span_7'>&#139;&#8211;&#160;&#160;&#160;</span>
+                    <span id='span_8'>&#8211;&#155;</span>
+                </div>
+            </div>
+           
+            <section class='section4'>
+                <div class="div4 div4_id">
+                    <div class="div4_inner_box">
+                        <div class="div4_bx1">
+                            <img src="https://cms-contents.pharmeasy.in/offer/6c8c80e851e-SUPR20.jpg?dim=60x0&dpr=1.5&q=100">
+                        </div>
+                        <div class="div4_bx2">
+                            <p>Flat 20% off + up to</p>
+                            <p>Rs. 1000 cash back</p>
+                            <p>Code:SUPR20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="div4_inner_box">
+                        <div class="div4_bx1">
+                            <img src="https://cms-contents.pharmeasy.in/offer/6901b462e6d-icicinew.jpg?dim=60x0&dpr=1.5&q=100">
+                        </div>
+                        <div class="div4_bx2">
+                            <p>Get Flat Rs.150 instant</p>
+                            <p>discount via select ICIC..</p>
+                            <p>Code not required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="div4_inner_box">
+                        <div class="div4_bx1">
+                            <img src="https://cms-contents.pharmeasy.in/offer/e11270f3e3f-paytmcashbackoptimized.png?dim=60x0&dpr=1.5&q=100">
+                        </div>
+                        <div class="div4_bx2">
+                            <p>Flat 20% off upto</p>
+                            <p>1000 cash back</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="div4_inner_box">
+                        <div class="div4_bx1">
+                            <img src="https://cms-contents.pharmeasy.in/offer/f337007ff9d-DC30.jpg?dim=60x0&dpr=1.5&q=100">
+                        </div>
+                        <div class="div4_bx2">
+                            <p>Flat 20% off upto</p>
+                            <p>1000 cash back</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="div4_inner_box">
+                        <div class="div4_bx1">
+                            <img src="https://cms-contents.pharmeasy.in/offer/780a73fd3c5-KBCLOGO10KB.jpg?dim=60x0&dpr=1.5&q=100">
+                        </div>
+                        <div class="div4_bx2">
+                            <p>Flat 20% off upto</p>
+                            <p>1000 cash back</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="div4_inner_box">
+                        <div class="div4_bx1">
+                            <img src="https://cms-contents.pharmeasy.in/offer/3a9d998e5d4-LOGOGPE.png?dim=60x0&dpr=1.5&q=100">
+                        </div>
+                        <div class="div4_bx2">
+                            <p>Flat 20% off upto</p>
+                            <p>1000 cash back</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- fourth carousal ends -->
     <!-- First Carousel -->
     <div class="carousal_1">
         <main>
@@ -681,7 +769,62 @@ var span5 = document.getElementById('span_5');
 
             }
         }
+////fourth carousal //////////////////////////////////
+var span7 = document.getElementById('span_7');
+        var span8 = document.getElementById('span_8');
+        // console.log(span)
+        var div4 = document.getElementsByClassName('div4');
+        var l = 0;
+        span8.addEventListener('click', right4)
+        function right4() {
+            l++;
+            for (var i of div4) {
+                if (l == 0) {
+                    i.style.left = '0px';
+                }
+                if (l == 1) {
+                    i.style.left = '-740px';
+                }
+                if (l == 2) {
+                    i.style.left = '-1480px';
+                }
+                if (l == 3) {
+                    i.style.left = '-2220px';
+                }
+                if (l == 4) {
+                    i.style.left = '-2960px';
+                }
+                if (l > 4) {
+                    l = 4;
+                }
 
+            }
+        }
+        span7.addEventListener('click', left4)
+        function left4() {
+            l--;
+            for (var i of div4) {
+                if (l == 0) {
+                    i.style.left = '0px';
+                }
+                if (l == 1) {
+                    i.style.left = '-740px';
+                }
+                if (l == 2) {
+                    i.style.left = '-1480px';
+                }
+                if (l == 3) {
+                    i.style.left = '-2220px';
+                }
+                if (l == 4) {
+                    i.style.left = '-2960px';
+                }
+                if (l < 0) {
+                    l = 0;
+                }
+
+            }
+        }
     </script>
 </body>
 
