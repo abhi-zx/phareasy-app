@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="carousal_fourth.css">
     <link rel="stylesheet" href="carousal_five.css">
     <link rel="stylesheet" href="bottom.css">
+    <link rel="stylesheet" href="login.css">
     <style>
         /* body {
             background-color: #2e3035;
@@ -218,7 +219,7 @@
 
             </div>
             <div class="menu">
-                <span>Login</span>
+                <span id='triger'>Login</span>
                 <span>SignUp</span>
             </div>
         </div>
@@ -227,7 +228,35 @@
     <div id='abc' class="container">
         <!-- <img id='sld'> -->
     </div>
-
+     <!-- Log-in code start -->
+     <div class="modal_wraper">
+        <div id="productArea" class="modal_container">
+            <!-- button 1 -->
+            <button class="close">&times;</button> 
+            <div class="pic_div">
+                <div class="pic_div_1">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+                </div>
+                <div class="pic_div_2">
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg">
+                </div>
+            </div>
+            <div class="login_div">
+                <div class="login_inner_div1">
+                    <h3>Quick Login/Register</h3>
+                </div>
+                <div class="login_inner_div2">
+                    <input type="text"placeholder="Enter your phone number">
+                </div>
+                <div class="login_inner_div3">
+                    <button>Continue</button>
+                </div>
+               
+            </div>
+            <p style="margin-top: 60px;margin-left: 40px;">By clicking continue, you agree with our Privacy Policy</p>
+        </div>
+    </div>
+     <!-- Login-code-ends -->
     <!-- SECTION 2 START-->
     <div id='products' class="product">
         <div class="item">
@@ -1109,6 +1138,25 @@ var span7 = document.getElementById('span_7');
 
             }
         }
+//    login code//////
+var triger = document.getElementById("triger");
+        var modal_wraper = document.querySelector('.modal_wraper');
+        var close = document.querySelector('.close');
+        triger.addEventListener("click", function () {
+            modal_wraper.classList.add('active')
+        })
+
+
+        close.addEventListener("click", function () {
+            modal_wraper.classList.remove('active')
+        })
+
+
+        modal_wraper.addEventListener("click", function (e) {
+            if (e.target !== modal_wraper)
+                return;
+            modal_wraper.classList.remove('active');
+        });
 
     </script>
 </body>
