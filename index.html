@@ -219,8 +219,8 @@
 
             </div>
             <div class="menu">
-                <span id='triger'>Login</span>
-                <span>SignUp</span>
+                <span id='triger'>Login/SignUp</span>
+                <span>Cart</span>
             </div>
         </div>
     </div>
@@ -573,7 +573,7 @@
                     <img src="https://cms-contents.pharmeasy.in/carousel_item/93092a81f8d-Featured-banner_Digine.jpg?dim=146x0&dpr=1.5&q=100">
                 </div>
                 <div class="div">
-                    <img src="https://cms-contents.pharmeasy.in/carousel_item/fd17e547883-Horlicks_web.jpg?dim=146x0&dpr=1.5&q=100">
+                    <img id='horlicks' src="https://cms-contents.pharmeasy.in/carousel_item/fd17e547883-Horlicks_web.jpg?dim=146x0&dpr=1.5&q=100">
                 </div>
                 <div class="div">
                     <img src="https://cms-contents.pharmeasy.in/carousel_item/d2988ac646f-Web_featured-brand_Dettol.png?dim=146x0&dpr=1.5&q=100">
@@ -1162,6 +1162,12 @@ var btn_order_now1= document.getElementById('btn_order_now1');
 btn_order_now1.addEventListener('click', click1);
 function click1(){
     window.location.href="order1page.html"
+}
+////////on click on horlicks/////////
+var horlicks = document.getElementById('horlicks');
+horlicks.addEventListener('click',prod);
+function prod(){
+    window.location.href='product.html';
 }
     </script>
 </body>
