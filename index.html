@@ -258,7 +258,7 @@
     </div>
      <!-- Login-code-ends -->
     <!-- SECTION 2 START-->
-    <div id='products' class="product">
+    <div id='products' class="product" style="margin-top: 40px;margin-bottom:100px">
         <div class="item">
             <div class="upperbox">
                 <div class="div1">
@@ -276,7 +276,7 @@
                 </div>
             </div>
             <div class="div2_order">
-                <button>Order Now</button>
+                <button id='btn_order_now1'>Order Now</button>
             </div>
 
         </div>
@@ -323,7 +323,7 @@
     </div>
  <!-- SECTION 2 END-->
  <!-- SECTION 3 START -->
-<div class="container3">
+<div class="container3" style="margin-bottom:50px">
     <div class="bx1"> 
         <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png">
     </div>
@@ -336,7 +336,7 @@
 </div>
     </div>
     <!-- Second carousal start -->
-    <div class="carousal_2">
+    <div class="carousal_2" style="margin-bottom:50px">
         <main class='main2'>
            
             <span id='span_3'>&#139;</span>
@@ -370,7 +370,7 @@
 
      <!-- Second carousal end -->
      <!-- Third Carousel start --> 
-    <div class="carousal_3">
+    <div class="carousal_3" style="margin-bottom:30px">
         <main class='main3'>
             <div class="div3_offer">
                 <div class="div3_offer1">
@@ -1157,7 +1157,12 @@ var triger = document.getElementById("triger");
                 return;
             modal_wraper.classList.remove('active');
         });
-
+////////////////////////////////
+var btn_order_now1= document.getElementById('btn_order_now1');
+btn_order_now1.addEventListener('click', click1);
+function click1(){
+    window.location.href="order1page.html"
+}
     </script>
 </body>
 

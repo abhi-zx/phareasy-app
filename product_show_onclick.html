@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bottom.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    .showproduct_onclick{
+        display:flex;
+        margin-top: 50px;
+        width:800px;
+        height: 400px;
+        /* background-color:yellow; */
+    }
+    .showproduct_onclick_innerbx1{
+        width:265px;
+        height:285px;
+        /* background-color:red; */
+        cursor:pointer;
+    }
+    .showproduct_onclick_innerbx1 img{
+        width:100%;
+        height: 100%;
+        border-radius:7px;
+        border: 1px solid rgb(233, 222, 222);
+    }
+    .showproduct_onclick_innerbx2{
+        margin: 30px;
+    }
+    .showproduct_onclick_innerbx2 p{
+        margin: 10px;
+        font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px;
+    /* color:#4f585e ; */
+    }
+    .p1{
+        color:#5c656b ;
+    }
+    .p2{
+      color: #10847e;
+    }
+    .p3{
+        color:#4f585e ;
+    }
+    #showproduct_onclick_innerbx3_btn{
+        background-color:#10847e;
+        border: none;
+        outline: none;
+        width:115px;
+        height:40px;
+        color:white;
+        font-weight: 800;
+        border-radius:7px;
+        cursor: pointer;
+    }
+</style>
+<body>
+     <!-- //////////////////Nav-Bar//////////////// -->
+     <div class="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+
+            </div>
+
+            <div class="searchbar">
+                <div class="inp">
+                    <input type="text" class="">
+                    <div class="icon">
+                        <img
+                            src='https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png'>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="menu">
+                <span id='triger'>Login</span>
+                <span>SignUp</span>
+            </div>
+        </div>
+    </div>
+   <!-- next page product area start -->
+    <div class="showproduct_onclick">
+        <div id='showproduct_innerbx1' class="showproduct_onclick_innerbx1">
+
+        </div>
+        <div class="showproduct_onclick_innerbx2">
+            <p class='p1'><h3> Horlicks Health & Nutrition Drink Jar, 500 G  </h3> </p>
+            <p class='p2'>  Visit HORLICKS Store  </p>
+            <p class='p3'> ₹227.85
+               <br> 
+                7% OFF
+                Inclusive of all taxes  </p>
+                <hr>
+                <div class="showproduct_onclick_innerbx3">
+                    <button id='showproduct_onclick_innerbx3_btn'>Add To Cart</button>
+                </div>
+        </div>
+    </div>
+    <!-- next page product area ends -->
+    <!-- //////////bottom area//////////////// -->
+    <div class="container2ndlast">
+        <div class="boxcl">
+            <div class="boxcl_small_1">
+                <p>Simplifying Healthcare, Impacting Lives</p>
+                <h4>Download the App for free</h4>
+                <div class="picdiv">
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6XOZz2r_AL6yVFBiDOyeOmPt3jkOf2ZBWkbr-aXsJepEUaO-XGIpCPpHK_zrSNKYb4Q&usqp=CAU'>
+                </div>
+            </div>
+            <div class="boxcl_small_2">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/f67d7f64.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <div class="containerlast">
+        <div class="last">
+            <h4>abhi</h4>
+            <div class="h4">Careers</div>
+            <div class="h4">Blog</div>
+            <div class="h4">Parterner with Pharmeasy</div>
+            <div class="h4">Sell at Pharmeasy</div>
+        </div>
+        <div class="last">
+            <h4>abhi</h4>
+            <div class="h4">Careers</div>
+            <div class="h4">Blog</div>
+            <div class="h4">Parterner with Pharmeasy</div>
+            <div class="h4">Sell at Pharmeasy</div>
+                <h4>abhi</h4>
+                <div class="h4">Careers</div>
+                <div class="h4">Blog</div>
+                <div class="h4">Parterner with Pharmeasy</div>
+                <div class="h4">Sell at Pharmeasy</div>
+                <h4>abhi</h4>
+                <div class="h4">Careers</div>
+                <div class="h4">Blog</div>
+                <div class="h4">Parterner with Pharmeasy</div>
+                <div class="h4">Sell at Pharmeasy</div>
+        </div>
+        <div class="last">
+            <h4>abhi</h4>
+            <div class="h4">Careers</div>
+            <div class="h4">Blog</div>
+            <div class="h4">Parterner with Pharmeasy</div>
+            <div class="h4">Sell at Pharmeasy</div>
+            <h4>abhi</h4>
+            <div class="h4">Careers</div>
+            <div class="h4">Blog</div>
+            <div class="h4">Parterner with Pharmeasy</div>
+            <div class="h4">Sell at Pharmeasy</div>
+        </div>
+        <div class="last">
+           
+        </div>
+    </div>
+    <div class="lastpic">
+        <img src="./Capture.PNG">
+    </div>
+    <script>
+        var st1= JSON.parse(localStorage.getItem("medic_order"))
+        var showproduct_innerbx1= document.getElementById("showproduct_innerbx1");
+        var img1= document.createElement("img");
+        img1.src =st1.img_src;
+        showproduct_innerbx1.append(img1);
+        var showproduct_onclick_innerbx3_btn =document.getElementById('showproduct_onclick_innerbx3_btn')
+        if(localStorage.getItem('medic_cart')==null){
+            localStorage.setItem('medic_cart',JSON.stringify([]))
+        }
+        showproduct_onclick_innerbx3_btn.addEventListener('click', function(){
+            addtocart(st1);
+        })
+        function addtocart(st1){
+           
+            var lcitem = JSON.parse(localStorage.getItem('medic_cart'));
+            lcitem.push(st1)
+            
+             localStorage.setItem('medic_cart',JSON.stringify(lcitem));
+             alert('added to cart')
+        }
+    </script>
+</body>
+</html>
