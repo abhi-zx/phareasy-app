@@ -102,13 +102,13 @@
 
     <div class="navbar">
         <div class="nav">
-            <div class="logo">
+            <div id='ecart' class="logo">
                 <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
 
             </div>
             <div class="menu">
-                <span id='triger'>Login</span>
-                <span>SignUp</span>
+                <span id='triger'>Login/SignUp</span>
+                <span>Cart</span>
             </div>
         </div>
     </div>
@@ -364,6 +364,13 @@ var span5 = document.getElementById('span_5');
                 }
 
             }
+        }
+
+
+        var ecart = document.getElementById('ecart');
+        ecart.addEventListener('click', ehome);
+        function ehome(){
+            window.location.href='index.html';
         }
 </script>
 </body>

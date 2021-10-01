@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .paybox_1{
+        width:610px;
+    }
+    .payheading{
+        margin-left: 100px;
+        width:600px;
+    }
+    .paybx1{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 600px;
+        height: 100px;
+        font-family: Open Sans, sans-serif;
+        color:#5c656b ;
+       
+        /* background-color:red; */
+    }
+    .paylogo{
+        width:50px;
+        height:50px;
+        /* background: yellow; */
+    }
+    .paylogo img{
+ width:100%;
+ height:100%;
+    }
+    .payradio{
+        width:15px;
+        height:15px;
+        border-radius: 50%;
+        position: relative;
+        margin-left:470px;
+        outline:green;
+        /* background-color:rgb(184, 43, 43);
+        border:2px solid green */
+        /* bottom:-10; */
+    }
+    #place_order{
+        background-color:#10847e;
+        color:white;
+        width:100px;
+        height:40px;
+        border: none;
+        outline:none;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    #place_order:hover{
+        width:103px;
+        height:43px;
+    }
+    .bp1{
+        display: flex;
+        width:300px;
+        height:80px;
+        color: #8897a2;
+        background-color:#f2fff8;
+    }
+    .bp2{
+        color: #8897a2;
+        width:300px;
+        height:80px;
+        /* background-color:yellow; */
+    }
+    .bp3{
+        width:300px;
+        height:80px;
+        /* background-color:blue; */
+    }
+    .mainpbox{
+       
+        font-family: Open Sans, sans-serif;
+        display: flex;
+    }
+    .paybox_2{
+        margin-left: 200px;
+        margin-top: 130px;;
+    }
+    .plogo{
+        width: 70px;
+        height:70px;
+
+    }
+    .plogo img{
+        width:100%;
+        height:60%;
+    }
+</style>
+<body>
+     <!-- //////////////////Nav-Bar//////////////// -->
+     <div class="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+            </div>
+
+            <div class="menu">
+                <span >100% secure payment</span>
+               
+            </div>
+        </div>
+    </div>
+    <div class="mainpbox">
+        <div class="paybox_1">
+            <div class="payheading">
+                <h1>Offers</h1> 
+                <div class="paybx1">
+                <div class="paylogo">
+                    <img src='https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png'>
+                </div>
+            <div class="paylogo2">
+                <h4>Mobiquick</h4><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, mollitia!</p>
+                <button type=radio class='payradio'></button>
+            </div>
+            </div>
+            <hr style="width: 600px;">
+            </div>
+            <div class="payheading">
+               
+                <div class="paybx1">
+                <div class="paylogo">
+                    <img src='https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png'>
+                </div>
+            <div class="paylogo2">
+                <h4>Paytm</h4><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, mollitia!</p>
+                <button type=radio class='payradio'></button>
+            </div>
+            </div>
+            <hr style="width: 600px;">
+            </div>
+            <div class="payheading">
+               
+                <div class="paybx1">
+                <div class="paylogo">
+                    <img src='https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png'>
+                </div>
+            <div class="paylogo2">
+                <h4>PhonePay</h4><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, mollitia!</p>
+                <button type=radio class='payradio'></button>
+            </div>
+            </div>
+            <hr style="width: 600px;">
+            </div>
+            <div class="payheading">
+               
+                <div class="paybx1">
+                <div class="paylogo">
+                    <img src='https://cdn.pharmeasy.in/payments/amazonpay_new.png'>
+                </div>
+            <div class="paylogo2">
+                <h4>Amazon Pay</h4><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, mollitia!</p>
+                <button type=radio class='payradio'></button>
+            </div>
+            </div>
+            <hr style="width: 600px;">
+            </div>
+            <div class="payheading">
+               
+                <div class="paybx1">
+                <div class="paylogo">
+                    <img src='https://consumer-app-images.pharmeasy.in/payment-icons/cod.png'>
+                </div>
+            <div class="paylogo2">
+                <h4>Cash On Deliverey</h4><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, mollitia!</p>
+                <button id='place_order'>Place Order</button>
+            </div>
+            </div>
+            <hr style="width: 600px;">
+            </div>
+           </div>
+           <div class="paybox_2">
+               <div class="bp1">
+                   <div class="plogo">
+                       <img src="https://assets.pharmeasy.in/web-assets/dist/9abb1d25.svg" alt="">
+                   </div>
+   <h4>PharmEasy Wallet</h4>
+               </div>
+               <div class="bp2">
+                   <h3 style="color: #5c656b;">Price Break Down</h3><br>
+                   <h5 id="cart_value">Cart Value</h5>
+                   <h5>Deliverey Charge: ₹70</h5>
+               </div>
+               <div class="bp3">
+                   <h4 id='amout_to_paid'style="color: #5c656b;">Amount To Be Paid</h4>
+               </div>
+           </div>
+    </div>
+   
+
+
+<script>
+    var payradio = document.querySelectorAll(".payradio");
+
+        alert('Upi payments not working, try cash on delivery')
+
+
+
+        var place_order =document.getElementById('place_order');
+        place_order.addEventListener('click', back)
+        function back() {
+            alert('Order Placed ')
+            var lc = JSON.parse(localStorage.getItem('medic_cart'));
+            lc=[];
+            localStorage.setItem('medic_cart',JSON.stringify(lc))
+            window.location.href='index.html'
+        }
+        var pc = JSON.parse(localStorage.getItem('medic_cart'));
+        var sum =0;
+        for(key in pc) {
+        sum+=  pc[key].rating;
+        }
+        var cart_value = document.getElementById('cart_value');
+        cart_value.textContent = "Cart Value: "+"₹"+sum
+        var amout_to_paid= document.getElementById('amout_to_paid')
+        amout_to_paid.textContent ='Amount To Be Paid :'+"₹"+(Number(sum)+Number(70))
+
+</script>
+</body>
+</html>

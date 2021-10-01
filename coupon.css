@@ -45,7 +45,7 @@
     left:-40px;
     top: 27px;
     font-size: 32px;
-    background:  #10847e;
+    background:  #fdffff;
     border: none;
     outline: none;
     cursor: pointer;
@@ -53,7 +53,7 @@
 padding-right: 15px;
 padding-top: 11px;
 padding-bottom: 9px;
-color: white;
+color: rgb(202, 197, 197);
     
 }
 .modal_container button.close:hover {
@@ -68,66 +68,28 @@ color: white;
 .modal_wraper.active .modal_container {
     transform: translateY(0px);
 }
-.pic_div{
-    width: 100%;
-    height: 115px;
-    background-color: #10847e;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-
-
+/* /////////////////////////////////////////////////////////////////////////// */
+.coupon_div{
+    height:400px;
 }
-.pic_div_1,.pic_div_2{
-    height:115px;
-    width:200px;
-    /* background-color: red; */
+.coupon_div input{
+    margin:10px;
+    width:350px;
+    height: 40px;
 }
-.pic_div_1 img{
-    width:100%;
-    height: 59px;
-    margin:35px
+.coupon_div label{
+    margin:10px;
+   color: #8897a2;
+   font-family: Open Sans, sans-serif;
 }
-.pic_div_2 img{
-    width:87%;
-    height:100%;
-}
-.login_div{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-.login_inner_div2{
-    width:360px;
-    height:50px;
-    /* background-color:yellow; */
-}
-.login_inner_div3{
-    width:360px;
-    height:50px;
-    /* background-color:red; */
-    
-}
-.login_inner_div2 input{
-    width:100%;
-    height:100%;
-    margin-top: 20px;
-    border: 1px solid #10847e;
-    border-radius: 7px;
-    font-size:17px;
-    outline: none;
-}
-.login_inner_div3 button{
-    width:100%;
-    height:100%;
-    margin-top: 40px;
-    border-radius: 7px;
-    border: none;
-    background-color:#10847e;
-    outline: none;
-    color: white;
-    font-size:17px;
-    font-weight: bold;
-    font-weight: 700;
+.coupon_address{
+    border:1px dotted #3bb896;
+    background-color: #f2fff8;
+    outline:none;
+    margin:10px;
+    width:340px;
+    height:60px;
+    border-radius:7px;
+    color:black;
+    cursor:text;
 }

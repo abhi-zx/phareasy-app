@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="coupon.css">
+</head>
+<style>
+   
+</style>
+<body>
+    <button id='triger'>abc</button>
+    <div class="modal_wraper">
+        <div id="productArea" class="modal_container">
+            <!-- button 1 -->
+            <button class="close">&times;</button> 
+                    <h1 style="margin-left:20px;font-family:Open Sans, sans-serif;color:#4f585e">Add New Address </h1>
+                    <div class="coupon_address">
+                        Items will be safely packed & Sanitized. Pay online for contactless delivery
+                    </div>
+
+                    <div class="coupon_div">
+                     <label for="">Bill To</label><br>
+                    <input type="text"><br>
+                    <label for="">Mobil Number</label><br>
+                    <input type="text"><br>
+                    <label for="">
+                        Building Name or flat number
+                    </label><br>
+                    <input type="text"><br>
+                    <label for="">Street Name</label><br>
+                    <input type="text"><br>
+                    <label for=""> Pin code</label><br>
+                    <input type="text"><br>
+                    <label for=""> Save</label><br>
+                    <input type="submit" ><br>
+                 </div>
+               
+            </div>
+           
+        </div>
+    </div>
+    <script>
+        var triger = document.getElementById("triger");
+        var modal_wraper = document.querySelector('.modal_wraper');
+        var close = document.querySelector('.close');
+        triger.addEventListener("click", function () {
+            modal_wraper.classList.add('active')
+        })
+
+
+        close.addEventListener("click", function () {
+            modal_wraper.classList.remove('active')
+        })
+
+
+        modal_wraper.addEventListener("click", function (e) {
+            if (e.target !== modal_wraper)
+                return;
+            modal_wraper.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

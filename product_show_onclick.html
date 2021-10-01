@@ -65,7 +65,7 @@
      <div class="navbar">
         <div class="nav">
             <div class="logo">
-                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+                <img id='take_to_home' src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
 
             </div>
 
@@ -81,8 +81,8 @@
 
             </div>
             <div class="menu">
-                <span id='triger'>Login</span>
-                <span>SignUp</span>
+                <span id='triger'></span>
+                <span id='product_show_onclick_cart'>Cart</span>
             </div>
         </div>
     </div>
@@ -182,10 +182,42 @@
            
             var lcitem = JSON.parse(localStorage.getItem('medic_cart'));
             lcitem.push(st1)
-            
+           
+            var product_show_onclick_cart= document.getElementById('product_show_onclick_cart')
+            product_show_onclick_cart.textContent= "Cart item:"+" "+count;
              localStorage.setItem('medic_cart',JSON.stringify(lcitem));
+
              alert('added to cart')
+             var lcitem = JSON.parse(localStorage.getItem('medic_cart'));
+        var count =0
+            for(key in lcitem){
+                count++;
+
+            }
+            var product_show_onclick_cart= document.getElementById('product_show_onclick_cart')
+            product_show_onclick_cart.textContent= "Cart item:"+" "+count;
         }
+        var lcitem = JSON.parse(localStorage.getItem('medic_cart'));
+        var count =0
+            for(key in lcitem){
+                count++;
+
+            }
+            var product_show_onclick_cart= document.getElementById('product_show_onclick_cart')
+            product_show_onclick_cart.textContent= "Cart item:"+" "+count;
+/////////////takes to home page////////
+            var take_to_home= document.getElementById('take_to_home')
+take_to_home.addEventListener('click',take_home);
+function take_home(){
+    window.location.href='index.html';
+}
+
+/////////////////takes to cart page////////
+var product_show_onclick_cart= document.getElementById('product_show_onclick_cart')
+product_show_onclick_cart.addEventListener('click',take_to_cart);
+function take_to_cart(){
+    window.location.href='cart_with_items.html'
+}
     </script>
 </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="carousal_second.css">
     <link rel="stylesheet" href="bottom.css">
     <link rel="stylesheet" href="cart_with_items.css">
+    <link rel="stylesheet" href="coupon.css">
 </head>
 <style>
     .order1para{
@@ -143,17 +144,49 @@
     }
 </style>
 <body>
+    <div class="modal_wraper">
+        <div id="productArea" class="modal_container">
+            <!-- button 1 -->
+            <button class="close">&times;</button> 
+                    <h1 style="margin-left:20px;font-family:Open Sans, sans-serif;color:#4f585e">Add New Address </h1>
+                    <div class="coupon_address">
+                        Items will be safely packed & Sanitized. Pay online for contactless delivery
+                    </div>
+
+                    <div class="coupon_div">
+                       
+                     <label for="">Bill To</label><br>
+                    <input id='cbill'type="text" required><br>
+                    <label for="">Mobil Number</label><br>
+                    <input id='cnumber' type="text"required><br>
+                    <label for="">
+                        Building Name or flat number
+                    </label><br>
+                    <input type="text" required><br>
+                    <label for="">Street Name</label><br>
+                    <input type="text"required><br>
+                    <label  for=""> Pin code</label><br>
+                    <input id='cpin' type="text"required><br>
+                    <label for=""> Save</label><br>
+                    <button id='csubmit'>Save</button>
+               
+                 </div>
+               
+            </div>
+           
+        </div>
+    </div>
 <!-- navbar -->
 
     <div class="navbar">
         <div class="nav">
-            <div class="logo">
+            <div id='from_carti_to_home' class="logo">
                 <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
 
             </div>
             <div class="menu">
-                <span id='triger'>Login</span>
-                <span>SignUp</span>
+                <span id='triger'>Login/SignUp</span>
+                <span id='item_cart'>Cart</span>
             </div>
         </div>
     </div>
@@ -171,7 +204,7 @@
         </div>
         <div class="corder">
             <button class="coupon">APPLY COUPON</button><br>
-            <button class="daddress">Add delivery address</button>
+            <button id='ctriger' class="daddress">Add delivery address</button>
             <button class="d_address">Order above ₹500 to save on delivery charges. Free delivery with cart value above ₹1000</button>
 
         </div>
@@ -456,10 +489,25 @@
 
             var img2 = document.createElement('img');
             img2.src="https://assets.pharmeasy.in/web-assets/dist/2fb50086.svg"
-            img2.addEventListener('click', cremove)
-            function cremove() {
-
+            ////////////remove from remove icon/////////////
+            img2.addEventListener('click', function() {
+                cremove(product)
+            })
+            function cremove(product) {
+                var iid=product.id;
+                var rl=JSON.parse(localStorage.getItem('medic_cart'))
+                var arr=[];
+                for(key in rl) {
+                    if(iid != rl.id){
+                        arr.push(rl[key])
+                    }
+                }
+                localStorage.setItem('medic_cart',JSON.stringify(arr))
                 cdiv1.remove();
+                function Refresh() {
+    window.parent.location = window.parent.location.href;
+   }
+Refresh();
             }
 
             cdiv1_remove.append(img2);
@@ -504,6 +552,61 @@
 
          })
 
+/////////////address/////////////
+var triger = document.getElementById("ctriger");
+        var modal_wraper = document.querySelector('.modal_wraper');
+        var close = document.querySelector('.close');
+        triger.addEventListener("click", function () {
+            modal_wraper.classList.add('active')
+        })
+
+
+        close.addEventListener("click", function () {
+            modal_wraper.classList.remove('active')
+        })
+
+
+        modal_wraper.addEventListener("click", function (e) {
+            if (e.target !== modal_wraper)
+                return;
+            modal_wraper.classList.remove('active');
+
+        });
+
+
+        var cbill = document.getElementById('cbill').value;
+var cnumber = document.getElementById('cnumber').value;
+var cpin = document.getElementById('cpin').value;
+
+var csubmit = document.getElementById('csubmit');
+
+csubmit.addEventListener('click', saveaddress);
+function saveaddress() {
+if(cbill!==null && cnumber!=null&& cpin!=null){
+    alert("address saved!");
+    var ctriger = document.getElementById('ctriger');
+    ctriger.innerText="Proceed to buy"
+}
+if(ctriger.innerText=="Proceed to buy"){
+    window.location.href='payment.html'
+}
+
+}
+///////////////////takes to home page //
+var from_carti_to_home= document.getElementById('from_carti_to_home')
+from_carti_to_home.addEventListener('click', ci_to_home)
+function ci_to_home() {
+    window.location.href='index.html'
+}
+/////////items in cart//////////////
+var lcitem = JSON.parse(localStorage.getItem('medic_cart'));
+        var count =0
+            for(key in lcitem){
+                count++;
+
+            }
+            var cart= document.getElementById('item_cart')
+            cart.textContent= "Cart item:"+" "+count;
 
 </script>
 </body>

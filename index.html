@@ -200,10 +200,10 @@
 
 <body>
     <!-- Nav-Bar -->
-    <div class="navbar">
+    <div class="navbar" style="position: sticky;top:0;z-index: 200;">
         <div class="nav">
             <div class="logo">
-                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
+                <img id='take_to_home' src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png">
 
             </div>
 
@@ -220,7 +220,7 @@
             </div>
             <div class="menu">
                 <span id='triger'>Login/SignUp</span>
-                <span>Cart</span>
+                <span id='cart'>Cart</span>
             </div>
         </div>
     </div>
@@ -247,9 +247,10 @@
                 </div>
                 <div class="login_inner_div2">
                     <input type="text"placeholder="Enter your phone number">
+                    <input id='name' style="margin-bottom:50px" type="text"placeholder="Enter your name">
                 </div>
                 <div class="login_inner_div3">
-                    <button>Continue</button>
+                    <button id='loginbtn'style="margin-top:200px">Continue</button>
                 </div>
                
             </div>
@@ -327,7 +328,7 @@
     <div class="bx1"> 
         <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png">
     </div>
-    <div class="bx2">diffrebt</div>
+    <div class="bx2"style="font-size:25px;color:white;background:#a291fa;">Save 5% extra on medicines & enjoy free delivery with plus membership.</div>
     <div class="bx3">
         <div class="bx1"> 
             <img src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png">
@@ -626,7 +627,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -638,7 +639,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -650,7 +651,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -662,7 +663,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -674,7 +675,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -686,7 +687,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -698,7 +699,7 @@
                             <p style="color: #4f585e;font-family: Open Sans, sans-serif;">Is A New COVID-19 Wave On The Way Or vaccination...</p><br>
                             <p style=" color:#727c83;font-family: Open Sans, sans-serif;font-weight: 300;font-size:13px">
                              As COVID vaccination gains momentum all over India and there is a drop in COVID cases, we are all feel... </p><br>
-                            <a href="">Read More</a> 
+                            <a href="https://pharmeasy.in/blog/should-you-be-worried-about-your-cholesterol-levels/">Read More</a> 
                      </div>
                     </div>
                         
@@ -1143,6 +1144,7 @@ var triger = document.getElementById("triger");
         var modal_wraper = document.querySelector('.modal_wraper');
         var close = document.querySelector('.close');
         triger.addEventListener("click", function () {
+
             modal_wraper.classList.add('active')
         })
 
@@ -1168,6 +1170,51 @@ var horlicks = document.getElementById('horlicks');
 horlicks.addEventListener('click',prod);
 function prod(){
     window.location.href='product.html';
+}
+
+
+/////////////on click cart///////////////////
+var cart = document.getElementById('cart');
+cart.addEventListener('click',showcart);
+function showcart(){
+    var count =0
+    var sunny= JSON.parse(localStorage.getItem('medic_cart'))
+    for(key in sunny){
+        count++;
+    }
+    console.log(count)
+            // var cart= document.getElementById('cart')
+            // cart.textContent= "Cart item:"+" "+count;
+    if(count<1){
+        window.location.href='cart.html';
+    }
+    else
+     window.location.href='cart_with_items.html'
+}
+var take_to_home= document.getElementById('take_to_home')
+take_to_home.addEventListener('click',take_home);
+function take_home(){
+    window.location.href='index.html';
+}
+
+/////////////number of items in cart ///////////////////
+var lcitem = JSON.parse(localStorage.getItem('medic_cart'));
+        var count =0
+            for(key in lcitem){
+                count++;
+
+            }
+            var cart= document.getElementById('cart')
+            cart.textContent= "Cart item:"+" "+count;
+///////////////////login///////////////////
+var loginbtn= document.getElementById('loginbtn')
+loginbtn.addEventListener('click', logg)
+
+function logg(){
+    alert('Successfully logged in!');
+    var name = document.getElementById('name').value;
+   var triger= document.getElementById('triger');
+   triger.textContent= name;
 }
     </script>
 </body>
